@@ -6,6 +6,7 @@
 
 body {
     background-color: #333;
+    font-family: system-ui;
 }
 
 .container {
@@ -59,13 +60,20 @@ header {
                 display: flex;
                 padding: 5px;
                 background-color: #3b3b3b;
-                border: 0px solid;
+                border: 1px #ffffff26 solid;
                 box-shadow: 0px 4px 9px 0px rgba(176, 176, 176, 0.1);
                 border-radius: 6px;
+                background: var(--white-white-15, #3B3B3B);
 
-                p{
+
+                p {
                     color: #fff;
-                    margin-left: 5px;
+                    margin-left: 6px;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    margin-top: 3px;
                 }
 
             }
@@ -75,15 +83,128 @@ header {
                 padding: 5px;
                 align-items: center;
                 background-color: #3b3b3b;
-                border: 0px solid;
+                border: 1px #ffffff26 solid;
                 box-shadow: 0px 4px 9px 0px rgba(176, 176, 176, 0.1);
                 border-radius: 6px;
-                .cash{
+                background: var(--white-white-15, #3B3B3B);
+
+                .cash {
                     color: #fff;
-                    
+                    margin-left: 10px;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+
                 }
 
             }
         }
+    }
+}
+
+// HEADER END 
+
+// HERO START 
+.hero {
+    background-image: url(/src/img/MAIN-BG.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .hero-page {
+        padding: 179px 0 87px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .description {
+            color: #fff;
+
+            h3 {
+                font-size: 56px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: 61px;
+                margin-bottom: 16px;
+
+            }
+
+            p {
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 32px;
+                color: #FFF;
+                opacity: 0.800000011920929;
+            }
+        }
+
+        .moon-pctr {
+            position: absolute;
+            right: 0px;
+            width: 732px;
+            height: 703px;
+        }
+
+    }
+}
+
+// HERO PAGE
+// WRAPPER PAGE
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .card {
+        padding: 30px 50px 0 30px;
+        background-color: #151822;
+        width: 353px;
+        height: 460px;
+
+        .offer {
+            color: #fff;
+            text-align: left;
+
+            .top-paragraph {
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 32px;
+                opacity: 0.8;
+            }
+
+            .title {
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 109%;
+            }
+
+            .text {
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                margin: 16px 0 32px;
+            }
+
+            .button {
+               
+                
+                .btn {
+                    text-decoration: none;
+                    padding: 16px 32px;
+                    border-radius: 12px;
+                    background: var(--accent, #1D9A6D);
+                    color: #fff;
+                    font-weight: 700;
+                    font-size: 16px;
+                    border: 0 solid;
+                    cursor: pointer;
+                }
+            }
+        }
+        
     }
 }
