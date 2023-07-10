@@ -12,6 +12,8 @@ body {
 .container {
     width: 1115px;
     margin: 0 auto;
+    position: relative;
+    z-index: 1;
 }
 
 header {
@@ -141,16 +143,16 @@ header {
             }
         }
 
-        .moon-pctr {
-            position: absolute;
-            right: 0px;
-            width: 732px;
-            height: 703px;
-        }
-
     }
 }
-
+.moon-pctr {
+    position: fixed;
+    right: 0px;
+    width: 732px;
+    height: 703px;
+    z-index: 0;
+    top: 0;
+}
 // HERO PAGE
 // WRAPPER PAGE
 .wrapper {
@@ -190,8 +192,8 @@ header {
             }
 
             .button {
-               
-                
+
+
                 .btn {
                     text-decoration: none;
                     padding: 16px 32px;
@@ -205,6 +207,39 @@ header {
                 }
             }
         }
-        
+
+    }
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+}
+
+// PARTNERS
+.partners {
+    background: #151822;
+
+    .partner-flex {
+        display: flex;
+        justify-content: space-between;
+
+        .partner-desc {
+            h2 {
+                color: #fff;
+                font-size: 42px;
+                font-weight: 700;
+                line-height: 43px;
+            }
+
+            p {
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 32px;
+                color: #fff;
+                opacity: 0.8;
+            }
+        }
     }
 }
